@@ -1,0 +1,9 @@
+[package]
+name = "calculator"
+version = "0.0.1"
+
+[]ependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework", rev = "framework/testnet" }
+
+[addresses]
+calculator = "0x0"
