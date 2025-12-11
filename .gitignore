@@ -1,0 +1,16 @@
+# Sui build output
+build/
+
+# Dependencies
+.move/
+
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
