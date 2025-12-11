@@ -2,9 +2,9 @@
 
 A simple calculator dApp built with Sui Move to demonstrate fundamental smart contract concepts.
 
-## 🚂 Features
+## Features
 
-- ✅ **Basic Arithmetic Operations**
+- **Basic Arithmetic Operations**
   - Addition
   - Subtraction
   - Multiplication
@@ -12,30 +12,30 @@ A simple calculator dApp built with Sui Move to demonstrate fundamental smart co
   - Modulo (remainder)
   - Power (exponentiation)
 
-- ✅ **State Management**
+- **State Management**
   - Persistent calculator object with history
   - Tracks last result
   - Counts total operations
 
-- ✅ **Error Handling**
+- **Error Handling**
   - Division by zero protection
   - Overflow protection for subtraction
 
-- ✅ **Calculation History**
+- **Calculation History**
   - Each operation creates a `CalculationResult` object
   - Stores operation type, operands, and result
 
-## 📘 Structure
+## Project Structure
 
 ```
 sui-calculator/
-└── Move.toml
- └── sources/
- │   └── calculator.move
- └── README.md
+├── Move.toml
+├── sources/
+│   └── calculator.move
+└── README.md
 ```
 
-## 📦 Smart Contract Overview
+## Smart Contract Overview
 
 ### Structs
 
@@ -54,7 +54,7 @@ sui-calculator/
 
 ### Functions
 
-2. **Entry Functions** (callable from transactions):
+**Entry Functions** (callable from transactions):
    - `create_calculator()` - Initialize a new calculator
    - `add()` - Add two numbers
    - `subtract()` - Subtract with overflow check
@@ -64,11 +64,11 @@ sui-calculator/
    - `modulo()` - Get remainder
    - `reset()` - Reset calculator
    
-3. **View Functions** (no-op, read-only):
+**View Functions** (no-op, read-only):
    - `get_last_result()` - Retrieve last result
    - `get_operation_count()` - Get total operations
 
-## 🛟 Key Concepts Demonstrated
+## Key Concepts Demonstrated
 
 1. **Structs**: Multiple custom structs with different abilities
 2. **Functions**: Entry functions for blockchain interactions and view functions for queries
@@ -79,7 +79,7 @@ sui-calculator/
 7. **Loops**: Implemented in the `power()` function
 8. **Testing**: Unit test included using Sui's testing framework
 
-## 🕚 Installation & Setup
+## Installation & Setup
 
 1. **Install Sui CLI**:
 ```bash
@@ -107,7 +107,7 @@ sui move test
 sui client publish --gas-budget 100000000
 ```
 
-## 🐿(�‍♂️ Usage
+## Usage
 
 After deploying the contract, you can interact with it using the Sui CLI or Sui Wallet:
 
@@ -128,29 +128,30 @@ sui client call --function add \
   --gas-budget 10000000
 ```
 
-## 🔬 Learning Objectives
+## Learning Objectives
 
 This project covers:
-- ✅ Struct definition with abilities (`key`, `store`)
-- ✅ Entry functions for blockchain interactions- ✅ View functions for querying state
-- ✅ Mutable references (`&mut`)
-- ✅ Object transfer and ownership
-- ✅ Error handling with custom error codes
-- ✅ Loop constructs (`while`)
-- ✅ Unit testing with Sui's test framework
-- ✅ Practical Move logic and control flow
+- Struct definition with abilities (`key`, `store`)
+- Entry functions for blockchain interactions
+- View functions for querying state
+- Mutable references (`&mut`)
+- Object transfer and ownership
+- Error handling with custom error codes
+- Loop constructs (`while`)
+- Unit testing with Sui's test framework
+- Practical Move logic and control flow
 
-## 🔊 Contributing
+## Contributing
 
 Feel free to submit issues or pull requests to improve this project!
 
-## 📗 License
+## License
 
 MIT
 
-## 🔻 Author
+## Author
 
-[ibnmarzuk](https://github.com/ibnmarzuk) - 📟 Frontend Dev & Web3 Educator
+[ibnmarzuk](https://github.com/ibnmarzuk) - Frontend Dev & Web3 Educator
 
 ---
-Built with ❤️ for the Sui blockchain ecosystem!
+Built for the Sui blockchain ecosystem!
